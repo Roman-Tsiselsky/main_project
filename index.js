@@ -1,6 +1,11 @@
-const add = (a, b) => a+b;
+const welcome = person => {
+    console.log('Ave, ${person.name}!');
+};
 
-console.log('Add numbers: 5 + 2 = ' + add(5, 2));
-console.log('add floats: 5.1 + 2.3 = ' + add(5.1, 2.3));
-console.log("Concatenate: \'5\' + \'2\' = " + add('5', '2'));
-console.log('Subtraction: 5 + (-2) = ' + add(5, -2));
+const marcus = {name: "Marcus Aurelius"};
+const mao = {name: 'Mao Zedong'};
+const cartesius = {name: 'Rene Descartes'};
+
+welcome(marcus);
+welcome(mao);
+welcome(cartesius);
