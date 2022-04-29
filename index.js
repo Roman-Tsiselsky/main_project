@@ -1,11 +1,13 @@
 const welcome = person => {
-    console.log('Ave, ${person.name}!');
+    console.log(`Ave, ${person.name}!`);
 };
 
-const marcus = {name: "Marcus Aurelius"};
-const mao = {name: 'Mao Zedong'};
-const cartesius = {name: 'Rene Descartes'};
+const persons = [
+    {name: "Marcus Aurelius"},
+    {name: 'Mao Zedong'},
+    {name: 'Rene Descartes'},
+];
 
-welcome(marcus);
-welcome(mao);
-welcome(cartesius);
+for (const person of persons){
+welcome(person);
+}
