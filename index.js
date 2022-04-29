@@ -1,10 +1,6 @@
-const MAX_VALUE = 10;
+const add = (a, b) => a+b;
 
-console.log('Begin');
-for(let i = 0; i < MAX_VALUE; i++){
-    console.dir({
-        i, date : new Date()
-    });
-}
-
-console.log('The End'); 
+console.log('Add numbers: 5 + 2 = ' + add(5, 2));
+console.log('add floats: 5.1 + 2.3 = ' + add(5.1, 2.3));
+console.log("Concatenate: \'5\' + \'2\' = " + add('5', '2'));
+console.log('Subtraction: 5 + (-2) = ' + add(5, -2));
